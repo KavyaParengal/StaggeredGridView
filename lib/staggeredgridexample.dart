@@ -55,9 +55,7 @@ class _StaggeredGridState extends State<StaggeredGrid> {
                 child: ClipRRect(
                   borderRadius: const BorderRadius.all(
                       Radius.circular(15)),
-                  child: FadeInImage.memoryNetwork(
-                    placeholder: kTransparentImage,
-                    image: imglist[index],fit: BoxFit.cover,),
+                  child: Image.network(imglist[index],fit: BoxFit.cover,),
                 ),
               );
             },
